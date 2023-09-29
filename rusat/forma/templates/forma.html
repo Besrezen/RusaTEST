@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Встреча выпускников МИЭМ - «СОЛ «Руза» - место, которое невозможно забыть» 05.10.2023г</h2>
+
+
+<form method="POST" enctype="multipart/form-data">
+  <fieldset>
+    <legend>Personal information:</legend>
+    {% csrf_token %}
+    {{ form.as_p}}
+    <button type="submit">Отправить</button>
+  </fieldset>
+</form>
+
+</body>
+</html>
